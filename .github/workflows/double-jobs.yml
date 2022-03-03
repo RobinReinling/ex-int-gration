@@ -16,8 +16,6 @@ jobs:
         run: echo "step2"
       - name: "step3"
         run: echo "step3"
-      - name: "step4"
-        run: echo "step4"
   jobs2:
     needs: jobs1
     runs-on: ubuntu-latest
@@ -28,3 +26,5 @@ jobs:
         run: echo "step5"    
       - name: "step6"
         run: echo "step6"    
+      - name: "step7"
+        run: echo "step7"
