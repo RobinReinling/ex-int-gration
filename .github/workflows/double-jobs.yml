@@ -18,6 +18,8 @@ jobs:
         run: echo "step2"
       - name: "step3"
         run: echo "step3"
+      - name: "step8"
+        run: echo "step8"
   jobs2:
     needs: jobs1
     runs-on: ubuntu-latest
