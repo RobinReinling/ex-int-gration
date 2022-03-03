@@ -1,10 +1,12 @@
-name: open pull request # On donne un titre à notre Workflow
+name: close pull request # On donne un titre à notre Workflow
 # On indique a github quand le déclencher
 # Est ce qu'on le déclenche au push, pull request, merge, push sur la branche ""
 on: 
   pull_request_target:
     types:
       - closed
+    branches:
+      - main  
 # On déclare des processus de travail
 jobs:
 # On donne un nom à nos jobs
@@ -12,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
   # On declare les tâches que notre processus va executer
     steps:
-      - name: "close pull request pull request"
+      - name: "close pull pull request"
         run: echo "Je déplois l'app"        
