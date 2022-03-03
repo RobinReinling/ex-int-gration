@@ -14,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
   # On declare les tâches que notre processus va executer
     steps:
-      - name: "open pull request"
+      - name: "open pull pull request"
         run: echo "Je fais des test et ensuite le build"        
