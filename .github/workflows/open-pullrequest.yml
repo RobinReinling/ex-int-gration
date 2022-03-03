@@ -15,4 +15,4 @@ jobs:
   # On declare les tâches que notre processus va executer
     steps:
       - name: "open pull pull request"
-        run: echo "Je fais des test et en suite le build"        
+        run: echo "Je fais des test et enssssuite le build"        
