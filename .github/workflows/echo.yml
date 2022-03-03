@@ -10,4 +10,4 @@ jobs:
   # On declare les tâches que notre processus va executer
     steps:
       - name: "echo"
-        run: echo "je fais des tests"       
+        run: echo "je fais des tests"
