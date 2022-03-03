@@ -6,7 +6,7 @@ on:
     types:
       - opened
     branches:
-      - dev   
+      - main  
 # On déclare des processus de travail
 jobs:
 # On donne un nom à nos jobs
