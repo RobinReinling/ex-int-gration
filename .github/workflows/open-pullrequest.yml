@@ -5,6 +5,8 @@ on:
   pull_request_target:
     types:
       - opened
+    branches:
+      - dev   
 # On déclare des processus de travail
 jobs:
 # On donne un nom à nos jobs
