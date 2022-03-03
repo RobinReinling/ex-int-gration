@@ -2,7 +2,9 @@ name: double jobs # On donne un titre à notre Workflow
 # On indique a github quand le déclencher
 # Est ce qu'on le déclenche au push, pull request, merge, push sur la branche ""
 on: 
-  push
+  push:
+    branches:
+      - support
 # On déclare des processus de travail
 jobs:
 # On donne un nom à nos jobs
