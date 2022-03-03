@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
   # On declare les tâches que notre processus va executer
     steps:
-      - name: "close pull request pull request"
+      - name: "close pull request"
         run: echo "Je déplois l'app"        
