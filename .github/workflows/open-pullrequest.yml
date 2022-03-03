@@ -1,0 +1,16 @@
+name: open pull request # On donne un titre à notre Workflow
+# On indique a github quand le déclencher
+# Est ce qu'on le déclenche au push, pull request, merge, push sur la branche ""
+on: 
+  pull_request_target:
+    types:
+      - opened
+# On déclare des processus de travail
+jobs:
+# On donne un nom à nos jobs
+  Tests:
+    runs-on: ubuntu-latest
+  # On declare les tâches que notre processus va executer
+    steps:
+      - name: "open pull request"
+        run: echo "Je fais des test et ensuite le build"        
