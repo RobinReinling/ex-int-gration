@@ -1,0 +1,27 @@
+name: double jobs # On donne un titre à notre Workflow
+# On indique a github quand le déclencher
+# Est ce qu'on le déclenche au push, pull request, merge, push sur la branche ""
+on: 
+# On déclare des processus de travail
+jobs:
+# On donne un nom à nos jobs
+  jobs1:
+    runs-on: ubuntu-latest
+  # On declare les tâches que notre processus va executer
+    steps:
+      - name: "step1"
+        uses: actions/checkout@v3
+      - name: "step2"
+        run: echo "step2"
+      - name: "step3"
+        run: echo "step3"
+  jobs2:
+    needs: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: "step1"
+        uses: actions/checkout@v3
+      - name: "step2"
+        run: echo "step2"    
+      - name: "step3"
+        run: echo "step3"    
